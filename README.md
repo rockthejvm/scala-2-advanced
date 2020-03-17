@@ -1,8 +1,8 @@
-## The official repository for the Scala Advanced course on Udemy
+## The official repository for the Scala Advanced course
 
 Powered by [Rock the JVM!](rockthejvm.com)
 
-This repository contains the code we wrote during  [Rock the JVM's Scala Advanced course](https://www.udemy.com/advanced-scala) on Udemy. Unless explicitly mentioned, the code in this repository is exactly what was caught on camera.
+This repository contains the code we wrote during  [Rock the JVM's Scala Advanced course](https://rockthejvm.com/course/advanced-scala) on Udemy. Unless explicitly mentioned, the code in this repository is exactly what was caught on camera.
 
 How to install:
 - either clone the repo or download as zip
