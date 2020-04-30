@@ -67,7 +67,7 @@ object FuturesPromises extends App {
 
   // client: mark to poke bill
   val mark = SocialNetwork.fetchProfile("fb.id.1-zuck")
-//  mark.onComplete(_match {
+//  mark.onComplete(_ match {
 //    case Success(markProfile) => {
 //      val bill = SocialNetwork.fetchBestFriend(markProfile)
 //      bill.onComplete {
