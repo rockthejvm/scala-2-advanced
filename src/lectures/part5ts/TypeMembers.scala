@@ -58,16 +58,18 @@ object TypeMembers extends App {
     type A <: Number
   }
 
+  trait OurMList extends MList with ApplicableToNumbers
+
   // NOT OK
-//  class CustomList(hd: String, tl: CustomList) extends MList with ApplicableToNumbers {
+//  class CustomList(hd: String, tl: CustomList) extends OurMList {
 //    type A = String
 //    def head = hd
 //    def tail = tl
 //  }
 
   // OK
-  class IntList(hd: Int, tl: IntList) extends MList {
-    type A = Int
+  class IntList(hd: Integer, tl: IntList) extends OurMList {
+    type A = Integer
     def head = hd
     def tail = tl
   }
