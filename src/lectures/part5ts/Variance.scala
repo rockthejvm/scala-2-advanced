@@ -135,9 +135,10 @@ object Variance extends App {
     def flatMap[S](f: T => CParking[S]): CParking[S] = ???
   }
 
+  class CList[-T]
   class XParking[-T](vehicles: List[T]) {
     def park(vehicle: T): XParking[T] = ???
-    def impound(vehicles: List[T]): XParking[T] = ???
+    def impound[R <: T](vehicles: CList[R]): XParking[R] = ???
     def checkVehicles[S <: T](conditions: String): List[S] = ???
 
     def flatMap[R <: T, S](f: Function1[R, XParking[S]]): XParking[S] = ???

@@ -1,10 +1,10 @@
 package lectures.part5ts
 
+
 /**
   * Created by Daniel.
   */
 object Reflection extends App {
-
   // reflection + macros + quasiquotes => METAPROGRAMMING
 
   case class Person(name: String) {
@@ -17,7 +17,7 @@ object Reflection extends App {
   // 1 - MIRROR
   val m = ru.runtimeMirror(getClass.getClassLoader)
   // 2 - create a class object = "description"
-  val clazz = m.staticClass("lectures.part5ts.Reflection.Person") // creating a class object by NAME
+  val clazz = m.staticClass("advanced.part5ts.Reflection.Person") // creating a class object by NAME
   // 3 - create a reflected mirror = "can DO things"
   val cm = m.reflectClass(clazz)
   // 4 - get the constructor

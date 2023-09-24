@@ -142,5 +142,17 @@ object StreamsPlayground extends App{
     if (numbers.isEmpty) numbers
     else new Cons(numbers.head, eratosthenes(numbers.tail.filter(_ % numbers.head != 0)))
 
-  println(eratosthenes(MyStream.from(2)(_ + 1)).take(100).toList())
+  val primes = eratosthenes(MyStream.from(2)(_ + 1))
+
+  def isPrime(n: Int) = {
+    def isPrimeRec(primesStream: MyStream[Int]): Boolean =
+      if (primesStream.head > n / 2) true
+      else if (n % primesStream.head == 0) false
+      else isPrimeRec(primesStream.tail)
+
+    isPrimeRec(primes)
+  }
+
+  primes.take(10000).foreach(println)
+
 }

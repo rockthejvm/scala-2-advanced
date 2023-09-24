@@ -8,6 +8,8 @@ object ScalaJavaConversions extends App {
 
   import collection.JavaConverters._
 
+  import scala.jdk.CollectionConverters._
+
   val javaSet: ju.Set[Int] = new ju.HashSet[Int]()
   (1 to 5).foreach(javaSet.add)
   println(javaSet)

@@ -39,7 +39,7 @@ object SelfTypes extends App {
     override def sing(): Unit = ???
   }
 
-  // vs inheritance
+  // self-types vs inheritance
   class A
   class B extends A // B IS AN A
 

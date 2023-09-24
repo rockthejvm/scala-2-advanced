@@ -138,7 +138,7 @@ object MySet {
       if (valSeq.isEmpty) acc
       else buildSet(valSeq.tail, acc + valSeq.head)
 
-    buildSet(values.toSeq, new EmptySet[A])
+    buildSet(values, new EmptySet[A])
   }
 }
 
