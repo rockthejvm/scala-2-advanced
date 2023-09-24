@@ -1,5 +1,7 @@
 package lectures.part5ts
 
+import scala.language.reflectiveCalls
+
 /**
   * Created by Daniel.
   */

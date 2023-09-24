@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/rock-the-jvm-advanced-scala.iml" filepath="$PROJECT_DIR$/rock-the-jvm-advanced-scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-2-advanced.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-2-advanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-2-advanced-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-2-advanced-build.iml" />
     </modules>
   </component>
 </project>
