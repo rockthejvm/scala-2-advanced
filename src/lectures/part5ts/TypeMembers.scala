@@ -66,8 +66,8 @@ object TypeMembers extends App {
 //  }
 
   // OK
-  class IntList(hd: Int, tl: IntList) extends MList {
-    type A = Int
+  class IntList(hd: Integer, tl: IntList) extends MList with ApplicableToNumbers {
+    type A = Integer
     def head = hd
     def tail = tl
   }
