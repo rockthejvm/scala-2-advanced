@@ -9,7 +9,6 @@ This repository contains the code we wrote during  [Rock the JVM's Scala 2 Advan
 How to install:
 - either clone the repo or download as zip
 - open with IntelliJ as it's a simple IDEA project
-- ensure the project is configured to use Scala version 2.12
 
 If you have changes to suggest to this repo, either
 - submit a GitHub issue
